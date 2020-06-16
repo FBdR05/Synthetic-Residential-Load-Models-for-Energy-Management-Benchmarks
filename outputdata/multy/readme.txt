@@ -1,0 +1,5 @@
+Each file in the "multy" folder contains the complete data of the arrival of appliances for an individual customer. 
+
+Thus, having all the individual appliance information and the time the appliance starts to be served. The appliance information are "start time", "duration", "power", "skedulable", "shifting window -", "shifting window +", "reactive", "Zp", "Ip", "Pp", "Zq", "Iq", "Pq", and "indeX". Where "start time" time the appliance arrived in the queue; "duration" duration of the appliance; "skedulable" boolean to classify if appliance is schedulable or not; "shifting window -" and  "shifting window +" start and end of the schedulable window; "power" active power (W); "reactive" reactive power of the appliance (VAR); "Zp", "Ip", "Pp" active power polynomial ZIP parameters; "Zq", "Iq", "Pq" reactive power polynomial ZIP parameters; and the "indeX" is the index of the appliance in the list (dependent on Season).
+
+To read the customer "1" complete file run "pandas.read_hdf('outputdata/multy/multHDF1.h5',key=str(1))".
